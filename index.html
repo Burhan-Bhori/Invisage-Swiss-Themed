@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pascal Höpli | Swiss Precision LinkedIn Strategy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo.jpg">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <img src="assets/logo.jpg" alt="Invisage" class="nav-logo">
+            </a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#results">Results</a>
+                <a href="https://calendly.com/pascal-hoepli/30min"
+                    style="color: var(--col-lake); font-weight: 700;">Book Call</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content-wrapper">
+            <!-- PROFILE IMAGE FIRST (LEFT) -->
+            <div class="hero-image-section animate-on-scroll">
+                <div class="profile-image-wrapper">
+                    <img src="assets/profile.jpg" alt="Pascal Höpli" class="profile-image">
+                    <!-- Floating Badges -->
+                    <div class="stat-badge badge-1">
+                        <div class="badge-number">300+</div>
+                        <div class="badge-label">Clients</div>
+                    </div>
+                    <div class="stat-badge badge-2">
+                        <div class="badge-number">5+</div>
+                        <div class="badge-label">Years</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TEXT SECOND (RIGHT) -->
+            <div class="hero-text">
+                <h1 class="animate-on-scroll">
+                    Transform Your LinkedIn into a <br>
+                    <span id="typewriter" class="typewriter text-gold"></span>
+                </h1>
+                <p class="animate-on-scroll"
+                    style="font-size: 1.25rem; margin-bottom: 2.5rem; color: var(--col-text-light);">
+                    Helping entrepreneurs & executives build trust and attract high-ticket clients.
+                    Swiss quality content. Zero fluff.
+                </p>
+                <a href="https://calendly.com/pascal-hoepli/30min" class="hero-btn animate-on-scroll">Book Your Strategy
+                    Call</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT - TIMELINE -->
+    <section id="about">
+        <div class="container">
+            <h2 class="text-center animate-on-scroll" style="text-align: center; margin-bottom: 3rem;">From Banking to
+                Branding</h2>
+
+            <!-- Video Placeholder -->
+            <div class="animate-on-scroll video-container"
+                style="border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-hover); margin-bottom: 4rem; position: relative;">
+                <video id="blueprintVideo" style="width: 100%; display: block;">
+                    <source src="assets/The_LinkedIn_Blueprint.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <!-- Custom Play Button Overlay -->
+                <div class="video-overlay" onclick="toggleVideo()">
+                    <div class="play-button">▶</div>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item animate-on-scroll slide-right">
+                    <div class="timeline-content">
+                        <h3>The Old Life</h3>
+                        <p>Comfortable but stagnant. I realized potential was being left on the table.</p>
+                    </div>
+                </div>
+                <div class="timeline-item animate-on-scroll slide-left">
+                    <div class="timeline-content">
+                        <h3>The Shift to Walenstadt</h3>
+                        <p>Moved to the mountains. Clarity found. Founded Invisage to bring that clarity to LinkedIn.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item animate-on-scroll slide-right">
+                    <div class="timeline-content">
+                        <h3>Building Systems</h3>
+                        <p>Developed the "Signal" framework. 300+ clients analyzed. Results optimized.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 4rem;">The Invisage Method</h2>
+            <div class="services-grid">
+
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">✒️</div>
+                    <h3>Content Strategy</h3>
+                    <p>Editorial calendars that position you as the Authority. No ChatGPT fluff.</p>
+                </div>
+
+                <div class="service-card animate-on-scroll" style="transition-delay: 0.1s;">
+                    <div class="service-icon">🏔️</div>
+                    <h3>Personal Branding</h3>
+                    <p>Authentic storytelling that builds trust before you even speak to a prospect.</p>
+                </div>
+
+                <div class="service-card animate-on-scroll" style="transition-delay: 0.2s;">
+                    <div class="service-icon">🎯</div>
+                    <h3>Lead Generation</h3>
+                    <p>Smart outreach systems that convert "Likes" into signed contracts.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CASE STUDY - SIGNAL VISUALIZER -->
+    <section id="casestudy">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Stop Being Background Noise</h2>
+            <p
+                style="text-align: center; margin-bottom: 4rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                The algorithm doesn't hate you. It just can't hear you. We tune your frequency to cut through.
+            </p>
+
+            <div class="signal-wrapper animate-on-scroll">
+
+                <!-- ROW 1: NOISE -->
+                <div class="signal-row">
+                    <div class="signal-label">Others (Noise)</div>
+                    <div class="signal-track noise-track">
+                        <!-- Bars generated by JS -->
+                    </div>
+                </div>
+
+                <!-- ROW 2: STRATEGY -->
+                <div class="signal-row">
+                    <div class="signal-label">Invisage (Signal)</div>
+                    <div class="signal-track signal-track-clean">
+                        <!-- Bars generated by JS -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="results">
+        <div class="container">
+            <div class="testimonial-carousel animate-on-scroll">
+                <div class="testimonial-card active">
+                    <p class="testimonial-text">"Pascal makes social media feel like YOU. Not a foreign language."</p>
+                    <h4>Tanja Klaus</h4>
+                    <span>Executive Coach</span>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"A system that truly works. I save time and get leads."</p>
+                    <h4>Silvan Jung</h4>
+                    <span>Financial Advisor</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" style="text-align: center; padding-bottom: 8rem;">
+        <div class="container">
+            <h2 class="animate-on-scroll">Ready to Ascend?</h2>
+            <p style="margin-bottom: 2rem;">Book your free strategy session.</p>
+            <a href="https://calendly.com/pascal-hoepli/30min" class="hero-btn">View Calendar</a>
+        </div>
+    </section>
+
+    <!-- STICKY FOOTER BAR -->
+    <div class="sticky-bar" id="stickyCta">
+        <div>
+            <a href="https://www.linkedin.com/in/pascal-h%C3%B6pli/" target="_blank"
+                style="text-decoration: underline;"><strong>Pascal Höpli</strong></a> | LinkedIn Strategist
+        </div>
+        <a href="https://calendly.com/pascal-hoepli/30min" class="btn btn-primary"
+            style="background: var(--col-forest); color: white; padding: 0.5rem 1.5rem; border-radius: 4px;">Book
+            Call</a>
+    </div>
+
+    <!-- CHATBOT -->
+    <a href="https://example.com/chat" target="_blank" class="chatbot-bubble">💬</a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
